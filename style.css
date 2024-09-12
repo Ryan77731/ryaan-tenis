@@ -1,0 +1,162 @@
+*{
+    margin: 0; /==cima==/
+    padding: 0;/==laDO==/
+    box-sizing: border-box; font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+header a{
+    color: #2e2e2e;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(23, 204, 204);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+header .btn-contato button{
+    box-shadow: 0px 0px 8px rgba(23, 204, 204, 0.473);
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 0px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: rgb(23, 204, 204);
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.area-loguin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /----- PEGAR TODO CAMPO DISPONIVEL DA TELA -----/
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loguin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #070707d0;
+    border-radius: 10px;
+    width: 400px;     /---- LARGURA ---/
+    height: 320px;   /---- ALTURA ---/
+    padding: 35px;  /---- ESPAÇAMENTO DO FORMULARIO E A CLASS ---/
+ 
+}         
+
+
+.loguin form{
+    display: flex;
+    width: 100%;
+    flex-direction: column; /---- PARA QUE FIQUE UM IMPUTI ACIMA DO OUTRP ---/
+}
+
+.loguin input{
+    margin-top: 10px;
+    background-color: #252a34;
+    color: #cbd0f7;
+    padding-left: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.loguin img{
+    width: 200px;
+    height: auto;
+}
+
+input::placeholder{
+    color: #cbd0f7;
+    font-size: 16px;
+}
+
+
+form [type="submit"]{
+    display: block;
+    background-color: rgb(23, 204, 204);
+    font-size: 20px; /==== TAMANHO DA FONT ===/
+    text-transform: uppercase;  /==== DEIXAR EM MAISCULO ===/
+    font-weight: bold;  /==== FONT MAIS DESTACADA ===/
+    cursor: pointer
+}
+
+p{
+    color: #cbd0f7;
+}
+
+a{
+    color: rgb(23, 204, 204);
+    text-decoration: none;
+    margin-left: 10px;
+}
